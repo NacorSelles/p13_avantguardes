@@ -1,0 +1,168 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation &amp; Transition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/slider js.js"></script>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: rgb(194, 50, 14);
+    } 
+    /* body>*{
+      border: 1px solid rgb(208, 255, 0);
+    }
+    body>*>*{
+      border: 1px solid red;
+    }
+    body>*>*>*{
+      border: 1px solid rgb(47, 0, 255);
+    } */
+    body{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(241, 230, 216);
+    }
+    #s1 {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      height: 100%;
+    }
+    #s1-1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #s1-2 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    #s2{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    #s2-1{
+    }
+    #s2-2{}
+    #s2-3{}
+    #s3{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    #s3-1{}
+    #s3-2{}
+    h1{}
+    h2{}
+    h3{}
+    p{}
+    p.bold{}
+    .rotate{
+      -webkit-transform: rotate(-90deg); 
+      -moz-transform: rotate(-90deg);
+    }
+    .large{}
+    .uppercase{
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+<div class="lleno">
+  <div id="s1">
+    <div id="s1-1">
+      <div class="rotate" style="
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Roboto Condensed', sans-serif;
+    ">
+      <div class="uppercase" style="
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      font-family: 'Roboto Condensed', sans-serif;
+      font-weight: 600;
+    "><span class="large" style="
+      font-size: 3em;
+    ">A</span><span style="
+        font-size: 1.5em;
+    ">nthologie</span></div>
+        <span style="
+      width: max-content;
+      text-align: center;
+      font-size: 1rem;
+      font-family: 'Roboto Condensed', sans-serif;
+    ">du Groupe Moderne d'Art de Liége</span>
+        <span style="
+      width: max-content;
+      font-size: 0.7rem;
+      text-align: center;
+      font-family: 'Roboto Condensed', sans-serif;
+    ">Rédaction: GEORGES LINZE. Rue Xhovémont 104, Liége.</span>
+      </div>
+    </div>
+    <div id="s1-2">
+      <span style="
+        font-family: 'Noto Serif Display', serif;
+        font-weight: 600;
+        font-size: 8em;
+        text-align: center;
+    "><p>G</p></span>
+      <span style="
+      text-align: center;
+  "><p class="bold" style="font-family: 'Roboto Condensed', sans-serif;font-size: 2em;">Berlin - Friedenau <br>Eschenstr. 7 <br>Directeur: <br>HANS RICHTER.</p></span>
+    </div>
+    </div>
+</div>
+<div class="lleno">
+  <div id="s2">
+    <div id="s2-1">
+      <p>Nous prions nos amis de nous envoyer des clichés, photograpgies, <br>dessins et articles.</p>
+      <p>Unsere Freunde werden gebeten uns Clichés, Photographien, <br>Zeichnungen und Artikel schicken zu wollen</p>
+    </div>
+    <div id="s2-2">
+      <h2>Mecano</h2>
+      <p class="bold">Haag-Klimopstraat 18, Holland <br>Directeurs: I. K. Bonset <br>et T. v. Doesburg.</p>
+    </div>
+    <div id="s2-3">
+      <h3>contimporanul</h3>
+      <p class="bold">29, Str. TRinitati Bucarest <br>Directeurs: <br>IANCO et VINEA</p>
+    </div>
+    </div>
+</div>
+<div class="lleno">
+  <div id="s3">
+    <div id="s3-1">
+      <h2><span class="large uppercase">P</span>asmo</h2>
+      <p class="bold">Brno-Julianov <br>Husovo abrezi 10</p>
+    </div>
+    <div id="s3-2">
+      <h1>Mavo</h1>
+      <p class="bold">Tokio (Japan) Kamiochiai 186 <br>Directeur: T. Murayama</p>
+    </div>
+    </div>
+</div>
+<div class="vacio"></div>
+
+</body></html>
+<script>
+  $('.lleno').click(function() {
+    $(this).find('div').first().appendTo('.vacio');
+
+    $('.vacio').removeClass('vacio').addClass('lleno');
+
+    $(this).removeClass('lleno').addClass('vacio').empty();
+  })
+</script>
